@@ -4,15 +4,16 @@ CONFIG_FILE=".env"
 
 if [ ! -f $CONFIG_FILE ]; then
     echo "Error: Configuration file '$CONFIG_FILE' not found."
-    echo "Please run 'scripts/configure' first to set up your environment."
+    echo "Run 'scripts/configure' to configure your module."
     exit 1
 fi
 
 source $CONFIG_FILE
 
 if [ -z $MODEL_NAME ] || [ -z $MODEL_VERSION ]; then
-    echo "Error: Module not configured."
-    echo "Run 'scripts/configure' first to set up your environment."
+    echo "Error: Configure your module first:"
+    echo "scripts/configure"
+    echo ".env"
     exit 1
 fi
 
