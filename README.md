@@ -7,7 +7,7 @@ Run [Phi4 Mini 3.8B](https://ollama.com/library/phi4-mini) on Lilypad Network.
 ```sh
 export WEB3_PRIVATE_KEY=WEB3_PRIVATE_KEY
 
-lilypad run github.com/DevlinRocha/lilypad-phi4-mini-3.8b:TAG \
+lilypad run github.com/DevlinRocha/lilypad-phi4-mini-3.8b:ada33df8e5a02cfc49b165da9609533d843a0ae5 \
 -i request="$(echo -n '{
   "model": "phi4-mini:3.8b",
   "messages": [{
