@@ -4,10 +4,12 @@ Run [Phi4 Mini 3.8B](https://ollama.com/library/phi4-mini) on Lilypad Network.
 
 ## Getting Started
 
+> Make sure that you Base64 encode your request.
+
 ```sh
 export WEB3_PRIVATE_KEY=WEB3_PRIVATE_KEY
 
-lilypad run github.com/DevlinRocha/lilypad-phi4-mini-3.8b:ada33df8e5a02cfc49b165da9609533d843a0ae5 \
+lilypad run github.com/DevlinRocha/lilypad-phi4-mini-3.8b:41e392d21ba479adacb88e674b949b6afe08353a \
 -i request="$(echo -n '{
   "model": "phi4-mini:3.8b",
   "messages": [{
