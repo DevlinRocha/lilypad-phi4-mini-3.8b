@@ -1,5 +1,5 @@
 # Use the existing Ollama Docker image as the base
-FROM ollama/ollama
+FROM ollama/ollama:0.5.13-rc5
 
 # Set environment variables
 ARG MODEL_ID="${MODEL_NAME}:${MODEL_VERSION}"
